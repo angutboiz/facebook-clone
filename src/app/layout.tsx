@@ -3,6 +3,8 @@ import { Arimo } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Header from "./component/header";
+import NavLeft from "./component/navLeft";
+import NavRight from "./component/navRight";
 
 const arimo = Arimo({ subsets: ["latin"] });
 
@@ -20,7 +22,11 @@ export default function RootLayout({
         <html lang="en">
             <body className={arimo.className}>
                 <Header />
-                {children}
+                <div className="flex bg-[#18191A] text-[#B5B7BB]">
+                    <NavLeft />
+                    {children}
+                    <NavRight />
+                </div>
                 <Analytics />
             </body>
         </html>
