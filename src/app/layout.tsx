@@ -22,7 +22,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={arimo.className}>
                 <Header />
-                <div className="flex bg-[#18191A] text-[#B5B7BB]">
+                <div className="flex bg-[#18191A] text-[#B5B7BB] pt-[65px]">
                     <NavLeft />
                     {children}
                     <NavRight />
