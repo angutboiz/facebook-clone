@@ -45,7 +45,7 @@ export default function Status() {
     return (
         <div className=" rounded-lg my-4">
             {data.map((item, index) => (
-                <div className="my-5 bg-[#242526]">
+                <div className="my-5 bg-[#242526]" key={index}>
                     <div className="flex gap-3 items-center px-4 pt-4">
                         <div className="">
                             <Image width={40} height={40} src={item.imgName} alt="" className="rounded-full" />

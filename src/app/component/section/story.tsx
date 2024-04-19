@@ -61,7 +61,7 @@ export default function Story() {
                         </div>
                     </CarouselItem>
                     {data.map((item, index) => (
-                        <CarouselItem className="basis-1/4">
+                        <CarouselItem className="basis-1/4" key={index}>
                             <div className="relative rounded-xl w-[150px] h-[230px] overflow-hidden  ">
                                 <Image style={{ objectFit: "cover" }} fill src={item.url} alt="" />
                                 <div className="absolute m-2">
